@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -12,25 +15,81 @@ body{
 
 .container{
     display: flex;
-    max-width: 400px;
+    max-width: 550px;
     margin: auto;
     box-shadow: 0 4px 8px 0 grey;
     border-radius: 10px;
-    background-color: antiquewhite;
     overflow: hidden;
 }
 
-.image{
-    width: 40%;
-    height: 100%;
+.container section{
+    width: 100%;
 }
-.image > img{
-    width: 150px;
+
+.container section:last-child{
+    width: 70%;
+}
+
+.container section:first-child{
+    background-image: url(./images/drawers.jpg);
     background-size: cover;
-    
+    background-position: center;
+    width: 55%;
 }
 
 .description{
-    width: 60%;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: grey;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+h1{
+    font-size: 17px;
+    color: rgb(100, 100, 100);
+    padding: 5px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+.content{
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    padding: 5px;
+}
+
+.bottom_part{
+    display: flex;
+    flex-direction: row;
+}
+
+.author{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 50px;
+}
+
+
+.author_name{
+    fle
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+}
+
+.date{
+    font-size: 10px;
+}
+
+.author::before{
+    content: '';
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background-image: url(./images/avatar-michelle.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
 }
