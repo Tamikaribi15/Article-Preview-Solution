@@ -15,31 +15,31 @@ body{
 }
 
 .container{
+    max-width: 300px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: white;
     border-radius: 10px;
-    max-width: 500px;
     margin: auto;
     box-shadow: 0 4px 8px 0 grey;
     /* overflow: hidden; */
 }
 
 .container section{
-    width: 100%;
+    height: 100%;
 }
 
 .container section:last-child{
-    width: 70%;
+    height: 70%;
 }
 
-.container section:first-child{
+section.image{
     background-image: url(./images/drawers.jpg);
     background-size: cover;
     background-position: center;
-    width: 55%;
+    height: 55%;
     border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .description{
@@ -47,13 +47,15 @@ body{
     flex-direction: column;
     text-align: left;
     color: grey;
-    padding: 10px;
+    /* increase the padding */
+    padding: 20px;
     margin-left: 5px;
     margin-right: 10px;
 }
 
 h1{
-    font-size: 15px;
+    /* increase the font size */
+    font-size: 16px;
     color: rgb(100, 100, 100);
     padding: 5px;
     font-family: "Roboto", sans-serif;
@@ -61,8 +63,9 @@ h1{
 }
 
 .content{
+    /* Increase font size */
     font-family: "Poppins", sans-serif;
-    font-size: 9px;
+    font-size: 11px;
     padding: 7px;
     margin-bottom: 10px;
 }
@@ -76,7 +79,8 @@ h1{
 .author{
     display: flex;
     flex-wrap: wrap;
-    width: 85%;
+    /* change width */
+    width: 68%;
     flex-direction: column;
 }
 
@@ -90,53 +94,20 @@ h1{
 }
 
 .author_name{
+    /* Increase font size */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 10px;
+    font-size: 11px;
 }
 
 .date{
-    font-size: 10px;
+    /* Increase font size*/
+    font-size: 11px;
     padding-top: 3px;
 }
 
 .share{
     cursor: pointer;
     position: relative;
-}
-
-.social_icons{
-    display: none;
-    flex-wrap: nowrap;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #06023f;
-    align-items: center;
-    gap: 10px;
-    color:  rgb(110, 110, 110);
-    font-size: 11px;
-    position: absolute;
-    top: -60px;
-    z-index: 2;
-    transform: translateX(-45%);
-    &::after{
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 0;
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
-        border-top: 10px solid #06023f;
-        bottom: -9px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-}
-
-.social_icons a{
-    display: flex;
-    gap: 10px;
-    flex-wrap: nowrap;
 }
 
 footer{
