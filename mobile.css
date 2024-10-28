@@ -103,6 +103,31 @@ h1{
     position: relative;
 }
 
+.social_icons{
+    display: none;
+    flex-wrap: nowrap;
+    padding: 20px 144px 20px 30px;
+    border-radius: 10px;
+    background-color: #06023f;
+    align-items: center;
+    gap: 10px;
+    color:  rgb(110, 110, 110);
+    font-size: 11px;
+    position: absolute;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    z-index: 2;
+    top: -3px;
+    right: -41.5px;
+    /* transform: translateX(45%); */
+}
+
+.social_icons a{
+    display: flex;
+    gap: 18px;
+    flex-wrap: nowrap;
+}
+
 footer{
     position: fixed;
     height: relative;
