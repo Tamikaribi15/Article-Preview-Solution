@@ -25,19 +25,12 @@ body{
     /* overflow: hidden; */
 }
 
-.container section{
-    height: 100%;
-}
-
-.container section:last-child{
-    height: 70%;
-}
 
 section.image{
     background-image: url(./images/drawers.jpg);
     background-size: cover;
     background-position: center;
-    height: 55%;
+    height: 220px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -80,7 +73,7 @@ h1{
     display: flex;
     flex-wrap: wrap;
     /* change width */
-    width: 68%;
+    width: 75%;
     flex-direction: column;
 }
 

@@ -15,11 +15,10 @@ body{
 }
 
 .container{
+    max-width: 500px;
     display: flex;
-    flex-direction: row;
     background-color: white;
     border-radius: 10px;
-    max-width: 500px;
     margin: auto;
     box-shadow: 0 4px 8px 0 grey;
     /* overflow: hidden; */
@@ -143,4 +142,39 @@ footer{
     position: fixed;
     height: relative;
     bottom: 5px;
+}
+
+@media(max-width:640px){
+    .container{
+        max-width: 300px;
+        flex-direction: column;
+    }
+    .container section:first-child{
+        height: 220px;
+        width: auto;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+    .description{
+        padding: 20px;
+    }
+    h1{
+        font-size: 16px;
+    }
+    .content, 
+    .author_name,
+    .date {
+        font-size: 11px;
+    }
+    .author{
+        width: 75%;
+    }
+    .container section{
+        width: revert;
+    }
+    
+    .container section:last-child{
+        width: revert;
+    }
 }
