@@ -115,8 +115,9 @@ h1{
     font-size: 11px;
     position: absolute;
     top: -60px;
+    letter-spacing: 0.3rem;
     z-index: 2;
-    transform: translateX(-45%);
+    transform: translateX(-58%);
     &::after{
         content: '';
         position: absolute;
