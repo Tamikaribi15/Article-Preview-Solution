@@ -23,6 +23,7 @@ body{
     margin: auto;
     box-shadow: 0 4px 8px 0 grey;
     /* overflow: hidden; */
+  position: relative;
 }
 
 
@@ -40,8 +41,8 @@ section.image{
     flex-direction: column;
     text-align: left;
     color: grey;
-    /* increase the padding */
     padding: 20px;
+    padding-bottom: 8px;
     margin-left: 5px;
     margin-right: 10px;
 }
@@ -100,31 +101,39 @@ h1{
 
 .share{
     cursor: pointer;
-    position: relative;
 }
 
 .social_icons{
     display: none;
     flex-wrap: nowrap;
-    padding: 20px 144px 20px 30px;
+    padding: 18px;
     border-radius: 10px;
     background-color: #06023f;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     color:  rgb(110, 110, 110);
     font-size: 11px;
+    letter-spacing: 0.5rem;
     position: absolute;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     z-index: 2;
-    top: -3px;
-    right: -41.5px;
+  inset-inline:0;
+  bottom:0;
     /* transform: translateX(45%); */
 }
 
+.share_btn{
+    width: 15px;
+    height: 15px;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+
 .social_icons a{
     display: flex;
-    gap: 18px;
+    gap: 20px;
     flex-wrap: nowrap;
 }
 

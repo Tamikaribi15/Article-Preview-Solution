@@ -132,10 +132,32 @@ h1{
 
 }
 
+.share_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 28px;
+    padding-bottom: 2px;
+    height: 28px;
+    z-index: 3;
+    padding: 5px;
+    background-color: grey;
+    border-radius: 50%;
+}
+
 .social_icons a{
     display: flex;
     gap: 10px;
     flex-wrap: nowrap;
+}
+
+.share_btn{
+    width: 25px;
+    height: 25px;
+    background-color: grey;
+    opacity: 0.6;
+    border-radius: 15px;
 }
 
 footer{
@@ -148,6 +170,7 @@ footer{
     .container{
         max-width: 300px;
         flex-direction: column;
+        position: relative;
     }
     .container section:first-child{
         height: 220px;
@@ -156,20 +179,6 @@ footer{
         border-top-right-radius: 10px;
         border-bottom-left-radius: 0;
     }
-    .description{
-        padding: 20px;
-    }
-    h1{
-        font-size: 16px;
-    }
-    .content, 
-    .author_name,
-    .date {
-        font-size: 11px;
-    }
-    .author{
-        width: 75%;
-    }
     .container section{
         width: revert;
     }
@@ -177,4 +186,55 @@ footer{
     .container section:last-child{
         width: revert;
     }
+    .description{
+        padding: 20px;
+        padding-bottom: 8px;
+    }
+    h1{
+        font-size: 16px;
+    }
+    .author{
+        width: 75%;
+    }
+    .content, 
+    .author_name,
+    .date {
+        font-size: 11px;
+    }
+    .share{
+        position: static;
+    }
+    .social_icons{
+        padding: 18px;
+        border-radius: 10px;
+        gap: 15px;
+        letter-spacing: 0.5rem;
+        top: revert;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        inset-inline:0;
+        bottom:0;
+        transform: none;
+    }
+    .social_icons::after {
+        display:none;
+      }
+    .share_btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 28px;
+        padding-bottom: 2px;
+        height: 28px;
+        z-index: 3;
+        padding: 5px;
+        background-color: grey;
+        border-radius: 50%;
+    }
+    .social_icons a{
+        gap: 20px;
+    }
+    
+
 }
